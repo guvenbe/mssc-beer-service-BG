@@ -9,6 +9,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import java.util.UUID;
@@ -27,9 +29,12 @@ class BeerControllerTest {
 
     @Test
     void getBeerById() throws Exception {
-        mockMvc.perform(get("/api/v1/beer" + UUID.randomUUID().toString())
+        MvcResult result = mockMvc.perform(get("/api/v1/beer/" + UUID.randomUUID().toString())
                 .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
+                .andExpect(status().isOk())
+                .andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
 
     }
 
@@ -37,9 +42,9 @@ class BeerControllerTest {
     void saveNewBeer() throws Exception {
         BeerDto beerDto = BeerDto.builder().build();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
-        mockMvc.perform(get("/api/v1/beer"  + UUID.randomUUID().toString())
-                .content(beerDtoJson)
-                .contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/api/v1/beer/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(beerDtoJson))
                 .andExpect(status().isCreated());
     }
 
@@ -47,9 +52,9 @@ class BeerControllerTest {
     void updateBeerById() throws Exception {
         BeerDto beerDto = BeerDto.builder().build();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
-        mockMvc.perform(get("/api/v1/beer")
-                .content(beerDtoJson)
-                .contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/api/v1/beer/"  + UUID.randomUUID().toString())
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(beerDtoJson))
                 .andExpect(status().isNoContent());
     }
 }
