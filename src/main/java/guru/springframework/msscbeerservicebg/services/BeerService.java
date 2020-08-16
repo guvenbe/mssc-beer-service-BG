@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservicebg.services.brewing;
+package guru.springframework.msscbeerservicebg.services;
 
 import guru.springframework.msscbeerservicebg.web.model.BeerDto;
 import guru.springframework.msscbeerservicebg.web.model.BeerPagedList;

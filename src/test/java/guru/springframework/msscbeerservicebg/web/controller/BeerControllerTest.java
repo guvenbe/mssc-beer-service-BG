@@ -2,7 +2,7 @@ package guru.springframework.msscbeerservicebg.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import guru.springframework.msscbeerservicebg.bootstrap.BeerLoader;
-import guru.springframework.msscbeerservicebg.services.brewing.BeerService;
+import guru.springframework.msscbeerservicebg.services.BeerService;
 import guru.springframework.msscbeerservicebg.web.model.BeerDto;
 import guru.springframework.msscbeerservicebg.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
