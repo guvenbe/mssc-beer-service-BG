@@ -13,3 +13,14 @@ Learn more about my courses below!
 | Brewery Beer Service | 8080 |
 | [Brewery Beer Order Service](https://github.com/springframeworkguru/mssc-beer-order-service) | 8081 |
 | [Brewery Beer Inventory Service](https://github.com/springframeworkguru/mssc-beer-inventory-service) | 8082 |
+
+
+docker run -it  \
+  -p 8161:8161 \
+  -p 61616:61616 \
+  vromero/activemq-artemis
+  
+  artemis / simetraehcapa
+  
+  mvn release:prepare -P ossrh
+  mvn release:perform _P ossrh
