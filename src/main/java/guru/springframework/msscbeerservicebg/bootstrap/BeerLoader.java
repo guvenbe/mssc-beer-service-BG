@@ -49,7 +49,7 @@ public class BeerLoader implements CommandLineRunner {
 
         Beer b3 = Beer.builder()
                 .beerName("Pinball Porter")
-                .beerStyle(BeerStyleEnum.PALE_ALE.name())
+                .beerStyle(BeerStyleEnum.PORTER.name())
                 .minOnHand(12)
                 .quantityToBrew(200)
                 .upc(BEER_3_UPC)
