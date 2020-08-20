@@ -1,7 +1,7 @@
 package guru.springframework.msscbeerservicebg.repositories;
 
 import guru.springframework.msscbeerservicebg.domain.Beer;
-import guru.springframework.msscbeerservicebg.web.model.BeerStyleEnum;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
