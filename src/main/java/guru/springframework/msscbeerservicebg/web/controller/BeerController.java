@@ -22,7 +22,7 @@ public class BeerController {
     public static final int DEFAULT_PAGE_SIZE = 25;
     private final BeerService beerService;
 
-    @GetMapping(produces = {"application/json"}, path = "beer'")
+    @GetMapping(produces = {"application/json"}, path = "beer")
     public ResponseEntity<BeerPagedList> listBeers(
             @RequestParam(value = "pageNumber", required = false) Integer pageNumber,
             @RequestParam(value = "pageSize", required = false) Integer pageSize,
