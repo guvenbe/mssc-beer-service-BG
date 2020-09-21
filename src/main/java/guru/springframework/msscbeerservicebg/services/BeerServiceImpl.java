@@ -68,7 +68,7 @@ public class BeerServiceImpl implements BeerService {
 
         if(!StringUtils.isEmpty(beerName) && !StringUtils.isEmpty(beerStyle)) {
             //search both
-            beerPage = beerRepository.findAllByBeerNameAndAndBeerStyle(beerName, beerStyle, pageRequest);
+            beerPage = beerRepository.findAllByBeerNameAndBeerStyle(beerName, beerStyle, pageRequest);
         } else if (!StringUtils.isEmpty(beerName) && StringUtils.isEmpty(beerStyle)){
             //search beer service name
             beerPage = beerRepository.findAllByBeerName(beerName, pageRequest);
