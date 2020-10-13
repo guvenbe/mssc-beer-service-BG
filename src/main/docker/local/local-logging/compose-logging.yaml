@@ -24,7 +24,7 @@ services:
       - elasticsearch
   filebeat:
     image: docker.elastic.co/beats/filebeat:7.7.0
-#    command: ./filebeat/filebeat.docker.yml -e -c filebeat.yml
+    command: ./filebeat/filebeat.docker.yml -e -c filebeat.yml
     volumes:
       - ./filebeat/filebeat.docker.yml:/usr/share/filebeat/filebeat.yml:ro # Configuration file
       - /var/lib/docker/containers:/var/lib/docker/containers:ro           # Docker logs
@@ -65,7 +65,7 @@ services:
       SPRING_PROFILES_ACTIVE: local-discovery,localmysql
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       SPRING_ZIPKIN_BASEURL: http://zipkin
-      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.4:3306/beerinventoryservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.3:3306/beerinventoryservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
       SPRING_ARTEMIS_HOST: jms
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
 #    restart: on-failure
@@ -97,7 +97,7 @@ services:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
       SPRING_ZIPKIN_BASEURL: http://zipkin
-      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.4:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.3:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
       SPRING_ARTEMIS_HOST: jms
     labels:
       collect_logs_with_filebeat: "true"
@@ -118,7 +118,7 @@ services:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
       SPRING_ZIPKIN_BASEURL: http://zipkin
-      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.4:3306/beerorderservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      SPRING_DATASOURCE_URL: jdbc:mysql://172.18.0.3:3306/beerorderservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
       SPRING_ARTEMIS_HOST: jms
       SFG_BREWERY_BEER-SERVICE-HOST: http://beer-service:8080
     labels:
