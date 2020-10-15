@@ -24,3 +24,5 @@ docker run -it  \
   
   mvn release:prepare -P ossrh
   mvn release:perform _P ossrh
+  
+  keytool -importcert -alias DoMySQLCert -file ca-certificate.crt -keystore truststore -storepass password
