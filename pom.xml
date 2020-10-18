@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>mssc-beer-service-bg</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>mssc-beer-service-bg</name>
     <description>MSSC Beer Service</description>
     <dependencies>
