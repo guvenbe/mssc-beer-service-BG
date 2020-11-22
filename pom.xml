@@ -32,8 +32,8 @@
 
   <scm>
       <connection>scm:git:git@github.com:guvenbe/mssc-brewery-beer-service-BG.git</connection>
-      <developerConnection>scm:git:git@github.com:guvenbe/sfg-brewery-beer-service-BG.git</developerConnection>
-      <url>https://github.com/guvenbe/sfg-brewery-beer-service-BG.git</url>
+      <developerConnection>scm:git:git@github.com:guvenbe/mssc-brewery-beer-service-BG.git</developerConnection>
+      <url>https://github.com/guvenbe/mssc-brewery-beer-service-BG.git</url>
     <tag>mssc-beer-service-bg-0.0.1</tag>
   </scm>
 </project>
