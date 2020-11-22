@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.github.sfg-beer-works</groupId>
         <artifactId>sfg-brewery-bom</artifactId>
-        <version>1.0.22</version>
+        <version>1.0.22-SNAPSHOT</version>
     </parent>
 
     <artifactId>mssc-beer-service-bg</artifactId>
@@ -31,8 +31,8 @@
     </dependencies>
 
   <scm>
-      <connection>scm:git:git@github.com:guvenbe/mssc-brewery-beer-service-BG.git</connection>
-      <developerConnection>scm:git:git@github.com:guvenbe/mssc-brewery-beer-service-BG.git</developerConnection>
+      <connection>scm:git:git@github.com:guvenbe/mssc-beer-service-BG.git</connection>
+      <developerConnection>scm:git:git@github.com:guvenbe/mssc-beer-service-BG.git</developerConnection>
       <url>https://github.com/guvenbe/mssc-brewery-beer-service-BG.git</url>
     <tag>mssc-beer-service-bg-0.0.1</tag>
   </scm>
