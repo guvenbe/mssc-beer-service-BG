@@ -26,3 +26,7 @@ docker run -it  \
   mvn release:perform _P ossrh
   
   keytool -importcert -alias DoMySQLCert -file ca-certificate.crt -keystore truststore -storepass password
+
+In Intellij run edit configuration
+-Djavax.net.ssl.trustStore=/home/vagrant/IdeaProjects/mssc-brewery-ws/mssc-beer-inventory-service/src/main/docker/truststore
+-Djavax.net.ssl.trustStorePassword=password
