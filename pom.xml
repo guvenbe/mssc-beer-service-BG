@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.github.sfg-beer-works</groupId>
         <artifactId>sfg-brewery-bom</artifactId>
-        <version>1.0.22-SNAPSHOT</version>
+        <version>1.0.22</version>
     </parent>
 
     <artifactId>mssc-beer-service-bg</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>mssc-beer-service-bg</name>
     <description>MSSC Beer Service</description>
     <dependencies>
