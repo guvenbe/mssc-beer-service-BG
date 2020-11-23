@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>mssc-beer-service-bg</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>mssc-beer-service-bg</name>
     <description>MSSC Beer Service</description>
     <dependencies>
@@ -34,6 +34,6 @@
       <connection>scm:git:git@github.com:guvenbe/mssc-beer-service-BG.git</connection>
       <developerConnection>scm:git:git@github.com:guvenbe/mssc-beer-service-BG.git</developerConnection>
       <url>https://github.com/guvenbe/mssc-brewery-beer-service-BG.git</url>
-    <tag>mssc-beer-service-bg-1.0.0</tag>
+    <tag>mssc-beer-service-bg-1.0.2</tag>
   </scm>
 </project>
